@@ -1,0 +1,214 @@
+@charset "UTF-8";
+/* Variables for Color Scheme */
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Arial", sans-serif;
+  background-color: black;
+  background-image: url("../images/leafbg.jpg"), url("../images/leafbg.jpg");
+  background-repeat: repeat-y, repeat-y;
+  background-position: left top, right top;
+  background-size: 500px auto;
+  line-height: 1.6;
+}
+
+.content-wrapper {
+  background: linear-gradient(to bottom, gray 0%, #ffffff 100%);
+  margin-left: 7rem;
+  margin-right: 7rem;
+  margin-top: -2rem;
+  padding-top: 2rem;
+}
+
+/* Navigation Bar */
+.header {
+  background-image: url("../images/Footer.jpg");
+  background-size: cover;
+  background-position: center;
+  padding: 5rem 2rem 2rem;
+  position: relative;
+}
+.header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.header .nav-bar {
+  display: flex;
+  gap: 1rem;
+  align-items: flex-start;
+  flex: 1;
+}
+.header .nav-bar .nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+  flex: 1;
+  justify-content: center;
+}
+.header .nav-bar .nav-links li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-family: "Jurassic", sans-serif;
+}
+.header .nav-bar .nav-links li a:hover {
+  text-decoration: underline;
+}
+.header .header-logo {
+  max-width: 175px;
+  position: absolute;
+  top: 3rem;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* Hero Section */
+.hero-section {
+  background-image: url("../images/Banner1.jpg");
+  background-size: 90% auto;
+  background-position: center -30px;
+  background-repeat: no-repeat;
+  color: white;
+  text-align: center;
+  padding: 20rem 1rem;
+  margin-right: -48px;
+  margin-left: -48px;
+  margin-bottom: -350px;
+}
+.hero-section .hero-content {
+  background-color: #25150e;
+  padding: 0.4rem 4rem;
+  display: inline-block;
+  border-radius: 40px;
+  margin: 0 auto;
+}
+.hero-section .hero-content h1 {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.events-section {
+  padding: 3rem 2rem;
+  text-align: center;
+}
+.events-section h2 {
+  margin-bottom: 2rem;
+  font-size: 2.5rem;
+  color: black;
+}
+.events-section .event-cards {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+.events-section .event-cards .event-card {
+  background-color: #000;
+  border: 5px solid #ffb400;
+  border-radius: 15px;
+  padding: 1rem;
+  width: 150px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+.events-section .event-cards .event-card .date {
+  font-size: 20rem;
+  font-weight: bold;
+  color: #fff;
+  text-shadow: 3px 3px 0px #ffb400;
+}
+.events-section .event-cards .event-card .month {
+  margin-top: 0.5rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #ffb400;
+}
+
+/* Recent Reviews Section */
+.reviews-section {
+  padding: 3rem 2rem;
+  background-color: white;
+}
+.reviews-section h2 {
+  margin-bottom: 1.5rem;
+  font-size: 2.5rem;
+  color: #333;
+}
+.reviews-section blockquote {
+  font-style: italic;
+  border-left: 5px solid #4caf50;
+  padding-left: 1rem;
+  margin: 1.5rem 0;
+  position: relative;
+}
+.reviews-section blockquote::before {
+  content: "“";
+  font-size: 3rem;
+  color: #ffb400;
+  position: absolute;
+  left: -1.5rem;
+  top: -0.5rem;
+}
+.reviews-section footer {
+  text-align: right;
+  font-weight: bold;
+}
+
+/* Popular Attractions Section */
+.attractions-section {
+  padding: 3rem 2rem;
+  text-align: center;
+}
+.attractions-section h2 {
+  margin-bottom: 1.5rem;
+  font-size: 2.5rem;
+  color: #333;
+}
+.attractions-section .attraction-container {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+.attractions-section .attraction {
+  flex: 0 1 calc(20% - 1rem);
+  max-width: 150px;
+  background-color: #f2f2f2;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.attractions-section .attraction img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  width: 500px;
+}
+.attractions-section .attraction p {
+  margin-top: 0.5rem;
+  font-weight: bold;
+  color: #333;
+}
+
+/* Footer Section */
+.footer {
+  background-image: url("../images/Footer.jpg");
+  background-size: cover;
+  background-position: center;
+  color: white;
+  text-align: center;
+  padding: 2rem;
+}
+.footer .back-to-top {
+  color: #4caf50;
+  text-decoration: none;
+}
+.footer .back-to-top:hover {
+  text-decoration: underline;
+}
+
+/*# sourceMappingURL=main.css.map */

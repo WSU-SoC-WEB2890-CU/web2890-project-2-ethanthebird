@@ -1,0 +1,49 @@
+.header {
+  background-image: url("../images/Footer.jpg");
+  background-size: cover;
+  background-position: center;
+  padding: 5rem 2rem 2rem;
+  position: relative;
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  .nav-bar {
+    display: flex;
+    gap: 1rem;
+    align-items: flex-start;
+    flex: 1;
+
+    .nav-links {
+      list-style: none;
+      display: flex;
+      gap: 1.5rem;
+      flex: 1;
+      justify-content: center;
+      padding-right: 2.5rem;
+
+      li a {
+        color: white;
+        text-decoration: none;
+        font-family: "adobe-garamond-pro", serif;
+        font-weight: 500;
+        font-size: 20px;
+        font-style: normal;
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+
+  .header-logo {
+    max-width: 175px;
+    position: absolute;
+    top: 3rem;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
