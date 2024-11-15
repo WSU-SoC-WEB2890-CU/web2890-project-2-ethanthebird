@@ -1,5 +1,4 @@
 .hero-section {
-  background-image: url("../images/Banner1.jpg");
   background-size: 90% auto;
   background-position: center -30px;
   background-repeat: no-repeat;
@@ -10,17 +9,57 @@
   margin-left: -48px;
   margin-bottom: -350px;
 
-  .hero-content {
-    background-color: #25150e;
-    padding: 0.4rem 4rem;
-    display: inline-block;
-    border-radius: 30px;
-    margin: 0 auto;
-    text-shadow: 2px 2px 0px #ff0008;
+  &.index-page {
+    background-image: url("../images/Banner1.jpg");
+  }
 
-    h1 {
-      font-size: 3rem;
-      font-weight: bold;
+  &.store-page {
+    background-image: url("../images/shopbg.jpg");
+  }
+
+  &.gallery-page {
+    background-image: url("../images/groupbg.jpg");
+  }
+
+  &.contact-page {
+    background-image: url("../images/desk.jpg");
+  }
+
+  &.map-page {
+    background-image: url("../images/island.jpg");
+  }
+
+  &.purpose-page {
+    background-image: url("../images/lab.jpg");
+  }
+
+  .hero-content {
+    &.index-page {
+      background-color: #25150e;
+      padding: 0.4rem 4rem;
+      display: inline-block;
+      border-radius: 30px;
+      margin: 0 auto;
+      text-shadow: 2px 2px 0px #ff0008;
+
+      h1 {
+        font-size: 3rem;
+        font-weight: bold;
+      }
+    }
+
+    &.store-page {
+      background-color: black;
+      padding: 0.4rem 4rem;
+      display: inline-block;
+      border-radius: 30px;
+      margin: 0 auto;
+      text-shadow: 2px 2px 0px #ff0008;
+
+      h1 {
+        font-size: 3rem;
+        font-weight: bold;
+      }
     }
   }
 }
