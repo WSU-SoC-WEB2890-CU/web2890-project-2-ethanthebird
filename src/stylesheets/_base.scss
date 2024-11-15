@@ -1,0 +1,17 @@
+body {
+  font-family: "Arial", sans-serif;
+  background-color: black;
+  background-image: url("../images/leafbg.jpg"), url("../images/leafbg.jpg");
+  background-repeat: repeat-y, repeat-y;
+  background-position: left top, right top;
+  background-size: 500px auto;
+  line-height: 1.6;
+}
+
+.content-wrapper {
+  background: linear-gradient(to bottom, gray 0%, #ffffff 100%);
+  margin-left: 7rem;
+  margin-right: 7rem;
+  margin-top: -2rem;
+  padding-top: 2rem;
+}
