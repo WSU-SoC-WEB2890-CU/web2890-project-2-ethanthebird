@@ -361,7 +361,7 @@ body {
 }
 
 .footer {
-  background-image: url("../images/footer.jpg");
+  background-image: url("images/footer.jpg");
   background-size: cover;
   background-position: center;
   padding: 6rem 2rem;
