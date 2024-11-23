@@ -601,7 +601,7 @@ body {
 
 @font-face {
   font-family: "Neuland-Inline";
-  src: url("assets/Neuland-Inline.otf") format("opentype");
+  src: url("../assets/Neuland-Inline.otf") format("opentype");
   font-weight: bold;
   font-style: bold;
 }
