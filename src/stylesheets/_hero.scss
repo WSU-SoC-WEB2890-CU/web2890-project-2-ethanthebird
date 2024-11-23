@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .hero-section {
   background-size: 90% auto;
   background-position: center -30px;
@@ -63,3 +64,70 @@
     }
   }
 }
+=======
+.hero-section {
+  background-size: 90% auto;
+  background-position: center -30px;
+  background-repeat: no-repeat;
+  color: white;
+  text-align: center;
+  padding: 20rem 1rem;
+  margin-right: -48px;
+  margin-left: -48px;
+  margin-bottom: -350px;
+
+  &.index-page {
+    background-image: url("../images/Banner1.jpg");
+  }
+
+  &.store-page {
+    background-image: url("../images/shopbg.jpg");
+  }
+
+  &.gallery-page {
+    background-image: url("../images/groupbg.jpg");
+  }
+
+  &.contact-page {
+    background-image: url("../images/desk.jpg");
+  }
+
+  &.map-page {
+    background-image: url("../images/island.jpg");
+  }
+
+  &.purpose-page {
+    background-image: url("../images/lab.jpg");
+  }
+
+  .hero-content {
+    &.index-page {
+      background-color: #25150e;
+      padding: 0.4rem 4rem;
+      display: inline-block;
+      border-radius: 30px;
+      margin: 0 auto;
+      text-shadow: 2px 2px 0px #ff0008;
+
+      h1 {
+        font-size: 3rem;
+        font-weight: bold;
+      }
+    }
+
+    &.store-page {
+      background-color: black;
+      padding: 0.4rem 4rem;
+      display: inline-block;
+      border-radius: 30px;
+      margin: 0 auto;
+      text-shadow: 2px 2px 0px #ff0008;
+
+      h1 {
+        font-size: 3rem;
+        font-weight: bold;
+      }
+    }
+  }
+}
+>>>>>>> 45aa18b02310e37f54efe2961a237396eb25c7c2

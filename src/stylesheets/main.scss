@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 @import "variables";
 @import "reset";
 @import "base";
@@ -83,3 +84,35 @@
     }
   }
 }
+=======
+@import "variables";
+@import "reset";
+@import "base";
+@import "header";
+@import "hero";
+@import "events";
+@import "reviews";
+@import "attractions";
+@import "footer";
+@import "inventory";
+@import "contact";
+@import "purpose";
+
+@font-face {
+  font-family: "Neuland-Inline";
+  src: url("../assets/Neuland-Inline.otf") format("opentype");
+  font-weight: bold;
+  font-style: bold;
+}
+
+.custom-font-text {
+  font-family: "Neuland-Inline", sans-serif;
+  font-size: 0.5rem;
+}
+
+.adobefont {
+  font-family: "adobe-garamond-pro", serif;
+  font-variation-settings: "wght" 800;
+  font-style: bold;
+}
+>>>>>>> 45aa18b02310e37f54efe2961a237396eb25c7c2

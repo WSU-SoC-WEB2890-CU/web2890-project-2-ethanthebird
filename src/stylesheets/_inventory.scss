@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .inventory-section {
   padding: 3rem 2rem;
   text-align: center;
@@ -49,3 +50,56 @@
     }
   }
 }
+=======
+.inventory-section {
+  padding: 3rem 2rem;
+  text-align: center;
+
+  h2 {
+    margin-bottom: 2rem;
+    font-size: 2.5rem;
+    color: white;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+  }
+
+  .inventory-grid {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+  }
+
+  .inventory-item {
+    flex: 0 1 calc(25% - 2rem);
+    max-width: 300px;
+    position: relative;
+    padding: 0;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+
+    img {
+      max-width: 100%;
+      height: auto;
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px;
+    }
+
+    p {
+      font-family: "adobe-garamond-pro", serif;
+      font-weight: bold;
+      font-size: large;
+      color: #333;
+      padding-top: 10px;
+    }
+
+    .price {
+      font-family: "adobe-garamond-pro", serif;
+      font-size: 2.5rem;
+      color: black;
+      margin-top: -35px;
+      margin-bottom: 0px;
+    }
+  }
+}
+>>>>>>> 45aa18b02310e37f54efe2961a237396eb25c7c2
