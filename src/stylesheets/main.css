@@ -360,60 +360,6 @@ body {
   color: #333;
 }
 
-.events-section {
-  padding: 3rem 2rem;
-  text-align: center;
-}
-.events-section h2 {
-  margin-bottom: 2rem;
-  font-size: 2.5rem;
-  color: white;
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
-}
-.events-section h2::before, .events-section h2::after {
-  content: "";
-  flex: 1;
-  height: 8px;
-  background-color: white;
-  margin: 0 1.5rem;
-  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
-}
-.events-section .event-cards {
-  display: flex;
-  justify-content: center;
-  gap: 2rem;
-}
-.events-section .event-cards .event-card {
-  background-color: #ffb400;
-  border: 5px solid #ffb400;
-  border-radius: 30px;
-  padding: 0.5rem;
-  width: 200px;
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-}
-.events-section .event-cards .event-card .date {
-  font-size: 7rem;
-  font-weight: bold;
-  color: #fff;
-  text-shadow: 3px 3px 0px #ff0008;
-  background-color: black;
-  border-radius: 20px;
-  font-family: "Neuland-Inline";
-  src: url("../assets/Neuland-Inline.otf") format("opentype");
-}
-.events-section .event-cards .event-card .month {
-  font-size: 2.5rem;
-  color: white;
-  background-color: #ffb400;
-  font-family: "Neuland-Inline";
-  src: url("../assets/Neuland-Inline.otf") format("opentype");
-  font-weight: bold;
-}
-
 .footer {
   background-image: url("../images/footer.jpg");
   background-size: cover;
@@ -424,17 +370,17 @@ body {
 }
 .footer .footer-logo {
   position: absolute;
-  top: 30px;
+  bottom: 80px; /* Aligns closer to social media icons */
   left: 50%;
   transform: translateX(-50%);
 }
 .footer .footer-logo img {
-  width: 120px;
+  width: 100px;
   height: auto;
 }
 .footer .footer-icons {
   position: absolute;
-  bottom: 80px;
+  bottom: 30px; /* Keeps the icons near the bottom */
   left: 70px;
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -449,7 +395,10 @@ body {
   transform: scale(1.2);
 }
 .footer .footer-credits {
-  margin-top: 4rem;
+  position: absolute;
+  bottom: 5px; /* Aligns closer to the logo */
+  left: 50%;
+  transform: translateX(-50%);
   font-size: 1.2rem;
   color: white;
   font-weight: bold;
@@ -457,7 +406,7 @@ body {
 }
 .footer .footer-ingen {
   position: absolute;
-  bottom: 80px;
+  bottom: 30px; /* Matches the social media icons */
   right: 70px;
 }
 .footer .footer-ingen img {
@@ -569,7 +518,7 @@ body {
 }
 .purpose-section p {
   font-size: 1.5rem;
-  line-height: 1.6;
+  line-height: 1.6; /* Ensures consistent spacing */
   color: #333;
   margin: 2rem auto;
   max-width: 800px;
@@ -583,11 +532,72 @@ body {
   transition: color 0.3s ease;
 }
 .purpose-section p::first-letter {
-  font-size: 2.5rem;
+  font-size: 2.5rem; /* Large enough for emphasis */
   font-weight: bold;
   color: black;
-  float: left;
-  margin-top: -1.1rem;
+  display: inline-block; /* Keeps the letter inline */
+  vertical-align: baseline; /* Aligns the letter with the text baseline */
+  line-height: 0.5; /* Matches the line-height of the rest of the paragraph */
+  margin-right: 0.2rem; /* Add slight spacing after the letter */
+}
+
+.map-page {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: calc(100vh - 140px); /* Adjust for header and footer height */
+  overflow: hidden;
+}
+.map-page .map-image {
+  width: 80%; /* Make the map fill the available width */
+  height: auto; /* Maintain the aspect ratio */
+  object-fit: cover; /* Ensures the image looks good even if cropped */
+}
+
+.gallery-page {
+  background: linear-gradient(to bottom, #ffffff, #dfe6e9); /* Gradient background */
+  padding: 0; /* Remove extra padding from the gallery-page container */
+  min-height: 100vh; /* Ensures the section fills the full viewport height */
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Center the gallery vertically */
+  align-items: center;
+  text-align: center;
+}
+.gallery-page h1 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem; /* Adjust margin for spacing above the gallery */
+  color: #333;
+}
+.gallery-page .gallery-grid {
+  display: grid;
+  grid-template-columns: 1fr; /* Single column by default */
+  gap: 1.5rem; /* Spacing between images */
+  width: 100%; /* Ensures the grid spans full width */
+  padding: 0 2rem; /* Add horizontal padding to the grid */
+}
+@media (min-width: 576px) {
+  .gallery-page .gallery-grid {
+    grid-template-columns: repeat(2, 1fr); /* Two columns on small screens */
+  }
+}
+@media (min-width: 992px) {
+  .gallery-page .gallery-grid {
+    grid-template-columns: repeat(3, 1fr); /* Three columns on larger screens */
+  }
+}
+.gallery-page .gallery-item {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.gallery-page .gallery-item:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.3);
 }
 
 @font-face {
@@ -605,6 +615,54 @@ body {
   font-family: "adobe-garamond-pro", serif;
   font-variation-settings: "wght" 800;
   font-style: bold;
+}
+
+.get-tickets {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem auto; /* Add spacing */
+  text-align: center;
+}
+.get-tickets .tickets-button {
+  display: inline-block;
+  position: relative;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  font-size: 1.5rem;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  margin-top: 10px;
+  margin-bottom: -60px;
+  overflow: hidden;
+  text-transform: uppercase;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  /* Background Image */
+  /* Button Text */
+}
+.get-tickets .tickets-button .button-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+  filter: brightness(0.7); /* Darkens the image for contrast */
+  transition: filter 0.3s ease;
+}
+.get-tickets .tickets-button span {
+  position: relative;
+  z-index: 1;
+}
+.get-tickets .tickets-button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.4);
+}
+.get-tickets .tickets-button:hover .button-image {
+  filter: brightness(1); /* Brightens image on hover */
 }
 
 /*# sourceMappingURL=main.css.map */
