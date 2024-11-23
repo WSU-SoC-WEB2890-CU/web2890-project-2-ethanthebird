@@ -7,7 +7,7 @@
 body {
   font-family: "Arial", sans-serif;
   background-color: black;
-  background-image: url("images/leafbg.jpg"), url("images/leafbg.jpg");
+  background-image: url("../images/leafbg.jpg"), url("../images/leafbg.jpg");
   background-repeat: repeat-y, repeat-y;
   background-position: left top, right top;
   background-size: 500px auto;
@@ -23,7 +23,7 @@ body {
 }
 
 .header {
-  background-image: url("images/Footer.jpg");
+  background-image: url("../images/Footer.jpg");
   background-size: cover;
   background-position: center;
   padding: 5rem 2rem 2rem;
@@ -79,10 +79,10 @@ body {
   margin-bottom: -350px;
 }
 .hero-section.index-page {
-  background-image: url("images/Banner1.jpg");
+  background-image: url("../images/Banner1.jpg");
 }
 .hero-section.store-page {
-  background-image: url("images/shopbg.jpg");
+  background-image: url("../images/shopbg.jpg");
 }
 .hero-section.gallery-page {
   background-image: url("images/groupbg.jpg");
@@ -94,7 +94,7 @@ body {
   background-image: url("images/island.jpg");
 }
 .hero-section.purpose-page {
-  background-image: url("images/lab.jpg");
+  background-image: url("../images/lab.jpg");
 }
 .hero-section .hero-content.index-page {
   background-color: #25150e;
@@ -361,7 +361,7 @@ body {
 }
 
 .footer {
-  background-image: url("images/footer.jpg");
+  background-image: url("../images/Footer.jpg");
   background-size: cover;
   background-position: center;
   padding: 6rem 2rem;
@@ -478,20 +478,19 @@ body {
   display: flex;
   flex-direction: column;
 }
-.contact-form-container form label {
-  margin-bottom: 0.5rem;
-  font-size: larger;
-  font-weight: bold;
-  color: #333;
-  text-align: center;
-}
 .contact-form-container form input,
 .contact-form-container form textarea {
-  padding: 0.5rem;
+  padding: 1rem;
   margin-bottom: 1.5rem;
   border: 2px solid #333;
   border-radius: 8px;
   outline: none;
+  font-size: 1rem;
+}
+.contact-form-container form input::placeholder,
+.contact-form-container form textarea::placeholder {
+  color: #aaa;
+  font-size: 1rem;
 }
 .contact-form-container form input:focus,
 .contact-form-container form textarea:focus {
@@ -499,7 +498,7 @@ body {
   box-shadow: 0 0 8px rgba(255, 0, 8, 0.3);
 }
 .contact-form-container form .submit-btn {
-  padding: 0.5rem 2rem;
+  padding: 0.8rem 5rem;
   background-color: #000;
   color: white;
   font-weight: bold;
