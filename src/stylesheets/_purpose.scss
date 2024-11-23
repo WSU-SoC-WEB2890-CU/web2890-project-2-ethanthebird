@@ -4,7 +4,7 @@
 
   p {
     font-size: 1.5rem;
-    line-height: 1.6; /* Ensures consistent spacing */
+    line-height: 1.6;
     color: #333;
     margin: 2rem auto;
     max-width: 800px;
@@ -20,13 +20,13 @@
     }
 
     &::first-letter {
-      font-size: 2.5rem; /* Large enough for emphasis */
+      font-size: 2.5rem;
       font-weight: bold;
       color: black;
-      display: inline-block; /* Keeps the letter inline */
-      vertical-align: baseline; /* Aligns the letter with the text baseline */
-      line-height: 0.5; /* Matches the line-height of the rest of the paragraph */
-      margin-right: 0.2rem; /* Add slight spacing after the letter */
+      display: inline-block;
+      vertical-align: baseline;
+      line-height: 0.5;
+      margin-right: 0.2rem;
     }
   }
 }

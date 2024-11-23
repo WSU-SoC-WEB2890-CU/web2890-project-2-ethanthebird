@@ -44,7 +44,7 @@
         background-color: black;
         border-radius: 20px;
         font-family: "Neuland-Inline";
-        src: url("../assets/Neuland-Inline.otf") format("opentype");
+        src: url("assets/Neuland-Inline.otf") format("opentype");
       }
 
       .month {
@@ -52,7 +52,7 @@
         color: white;
         background-color: $accent-color;
         font-family: "Neuland-Inline";
-        src: url("../assets/Neuland-Inline.otf") format("opentype");
+        src: url("assets/Neuland-Inline.otf") format("opentype");
         font-weight: bold;
         text-shadow: 2px 2px 0px black;
       }

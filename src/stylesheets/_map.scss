@@ -4,12 +4,12 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: calc(100vh - 140px); /* Adjust for header and footer height */
+  min-height: calc(100vh - 140px);
   overflow: hidden;
 
   .map-image {
-    width: 80%; /* Make the map fill the available width */
-    height: auto; /* Maintain the aspect ratio */
-    object-fit: cover; /* Ensures the image looks good even if cropped */
+    width: 80%;
+    height: auto;
+    object-fit: cover;
   }
 }

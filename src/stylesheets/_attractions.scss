@@ -44,7 +44,7 @@
         background-color: black;
         border-radius: 20px;
         font-family: "Neuland-Inline";
-        src: url("../assets/Neuland-Inline.otf") format("opentype");
+        src: url("assets/Neuland-Inline.otf") format("opentype");
       }
 
       .month {
@@ -52,7 +52,7 @@
         color: white;
         background-color: $accent-color;
         font-family: "Neuland-Inline";
-        src: url("../assets/Neuland-Inline.otf") format("opentype");
+        src: url("assets/Neuland-Inline.otf") format("opentype");
         font-weight: bold;
       }
     }
@@ -60,7 +60,7 @@
 }
 
 .footer {
-  background-image: url("../images/footer.jpg");
+  background-image: url("images/footer.jpg");
   background-size: cover;
   background-position: center;
   padding: 6rem 2rem;

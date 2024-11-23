@@ -8,7 +8,7 @@
 
   .footer-logo {
     position: absolute;
-    bottom: 80px; /* Aligns closer to social media icons */
+    bottom: 80px;
     left: 50%;
     transform: translateX(-50%);
 
@@ -20,7 +20,7 @@
 
   .footer-icons {
     position: absolute;
-    bottom: 30px; /* Keeps the icons near the bottom */
+    bottom: 30px;
     left: 70px;
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -39,7 +39,7 @@
 
   .footer-credits {
     position: absolute;
-    bottom: 5px; /* Aligns closer to the logo */
+    bottom: 5px;
     left: 50%;
     transform: translateX(-50%);
     font-size: 1.2rem;
@@ -50,7 +50,7 @@
 
   .footer-ingen {
     position: absolute;
-    bottom: 30px; /* Matches the social media icons */
+    bottom: 30px;
     right: 70px;
 
     img {

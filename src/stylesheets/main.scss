@@ -15,7 +15,7 @@
 
 @font-face {
   font-family: "Neuland-Inline";
-  src: url("../assets/Neuland-Inline.otf") format("opentype");
+  src: url("assets/Neuland-Inline.otf") format("opentype");
   font-weight: bold;
   font-style: bold;
 }
@@ -35,7 +35,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 2rem auto; /* Add spacing */
+  margin: 2rem auto;
   text-align: center;
 
   .tickets-button {
@@ -54,7 +54,6 @@
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 
-    /* Background Image */
     .button-image {
       position: absolute;
       top: 0;
@@ -63,11 +62,10 @@
       height: 100%;
       object-fit: cover;
       z-index: -1;
-      filter: brightness(0.7); /* Darkens the image for contrast */
+      filter: brightness(0.7);
       transition: filter 0.3s ease;
     }
 
-    /* Button Text */
     span {
       position: relative;
       z-index: 1;
@@ -78,7 +76,7 @@
       box-shadow: 0 6px 8px rgba(0, 0, 0, 0.4);
 
       .button-image {
-        filter: brightness(1); /* Brightens image on hover */
+        filter: brightness(1);
       }
     }
   }
